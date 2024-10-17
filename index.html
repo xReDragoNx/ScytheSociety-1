@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scythe Society - Comunidad Gamer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Título Principal -->
+    <header class="bg-dark text-center py-5">
+        <h1 class="text-light display-4">SCYTHE SOCIETY</h1>
+        <p class="text-light lead">Comunidad Gamer</p>
+    </header>
+
+    <!-- Historia -->
+    <section class="bg-secondary text-center text-light py-4">
+        <div class="container">
+            <p class="mb-0">Somos la mejor comunidad gamer desde el 2004. Nacidos en Arequipa, formamos el mejor grupo de todos.</p>
+        </div>
+    </section>
+
+    <!-- Contenedor de botones y pantalla de visualización -->
+    <div class="container-fluid bg-dark text-light py-5">
+        <div class="row">
+            <!-- Botones de Twitch -->
+            <div class="col-md-3 mb-3">
+                <div class="list-group">
+                    <button class="list-group-item list-group-item-action btn-dark" onclick="showContent('twitch1')">Twitch Canal 1</button>
+                    <button class="list-group-item list-group-item-action btn-dark" onclick="showContent('twitch2')">Twitch Canal 2</button>
+                    <button class="list-group-item list-group-item-action btn-dark" onclick="showContent('twitch3')">Twitch Canal 3</button>
+                    <button class="list-group-item list-group-item-action btn-dark" onclick="showContent('twitch4')">Twitch Canal 4</button>
+                    <button class="list-group-item list-group-item-action btn-dark" onclick="showContent('twitch5')">Twitch Canal 5</button>
+                </div>
+            </div>
+
+            <!-- Pantalla de Visualización -->
+            <div class="col-md-9">
+                <div id="display" class="embed-responsive embed-responsive-16by9 border border-light rounded">
+                    <p class="text-center text-light">Selecciona un canal para ver su contenido.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

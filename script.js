@@ -4,7 +4,7 @@ function showContent(channel) {
 
     switch (channel) {
         case 'twitch1':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=auronplay&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=rubius&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
             break;
         case 'twitch2':
             displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=canal2&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';

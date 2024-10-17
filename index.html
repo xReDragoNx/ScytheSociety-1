@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Scythe Society</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 
-<div id="title">
-    <h1>SCYTHE SOCIETY</h1>
-    <h4>Comunidad Gamer</h4>
-</div>
-<div id="description">
-    <p>¡Bienvenidos a Scythe Society! La comunidad gamer donde compartimos momentos inolvidables y diversión.</p>
-</div>
+    <div class="container text-center">
+        <h1 class="font-weight-bold">Scythe Society</h1>
+        <h2>Comunidad Gamer</h2>
+        <p class="lead">Desde 2004, hemos estado tratando de unir a la gente por una misma pasión: los videojuegos. ¡Buscamos ser los mejores!</p>
+        
+        <div id="display" class="mb-4">
+            <!-- Aquí se mostrará el stream -->
+            <p>Selecciona un canal para ver su contenido.</p>
+        </div>
 
-<div id="display">
-    <p>Selecciona un canal para ver su contenido.</p>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col text-center">
-            <button onclick="showContent('twitch1')" class="btn btn-primary">Scythe Society Twitch</button>
-            <button onclick="showContent('twitch2')" class="btn btn-primary">Scythe Society YouTube</button>
-            <button onclick="showContent('twitch3')" class="btn btn-primary">YumehimeSan</button>
-            <button onclick="showContent('twitch4')" class="btn btn-primary">AuronPlay</button>
-            <button onclick="showContent('twitch5')" class="btn btn-primary">Ibai</button>
+        <div class="btn-group-vertical" role="group" aria-label="Botones de canales">
+            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch1')">Scythe Society</button>
+            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch2')">Scythe Society Youtube</button>
+            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch3')">YumeHimeSan</button>
+            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch4')">AruonPlay</button>
+            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch5')">Ibai</button>
         </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <footer class="text-center mt-5 mb-3">
+        <p>Creado por Scythe Society 2024</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

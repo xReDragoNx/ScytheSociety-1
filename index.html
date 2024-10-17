@@ -14,17 +14,39 @@
         <h2>Comunidad Gamer</h2>
         <p class="lead">Desde 2004, hemos estado tratando de unir a la gente por una misma pasión: los videojuegos. ¡Buscamos ser los mejores!</p>
         
-        <div id="display" class="mb-4">
-            <!-- Aquí se mostrará el stream -->
-            <p>Selecciona un canal para ver su contenido.</p>
+        <div class="row">
+            <div class="col-md-8" id="display" class="mb-4">
+                <!-- Aquí se mostrará el stream -->
+                <iframe src="https://player.twitch.tv/?channel=scythesocietygg&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="100%"></iframe>
+            </div>
+
+            <div class="col-md-4" id="chat">
+                <!-- Aquí se mostrará el chat -->
+                <iframe src="https://www.twitch.tv/scythesocietygg/chat" frameborder="0" allowfullscreen="true" height="400" width="100%"></iframe>
+            </div>
         </div>
 
-        <div class="btn-group-vertical" role="group" aria-label="Botones de canales">
-            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch1')">Scythe Society</button>
-            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch2')">Scythe Society Youtube</button>
-            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch3')">YumeHimeSan</button>
-            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch4')">AruonPlay</button>
-            <button type="button" class="btn btn-outline-light" onclick="showContent('twitch5')">Ibai</button>
+        <div class="btn-group-vertical mt-4" role="group" aria-label="Botones de canales">
+            <div class="d-flex justify-content-between mb-2">
+                <button type="button" class="btn btn-outline-light" onclick="showContent('twitch1')">Canal Twitch 1</button>
+                <button type="button" class="btn btn-outline-light" onclick="showChat('twitch1')">Chat</button>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <button type="button" class="btn btn-outline-light" onclick="showContent('twitch2')">Canal YouTube</button>
+                <button type="button" class="btn btn-outline-light" onclick="showChat('twitch2')">Chat</button>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <button type="button" class="btn btn-outline-light" onclick="showContent('twitch3')">Canal Twitch 3</button>
+                <button type="button" class="btn btn-outline-light" onclick="showChat('twitch3')">Chat</button>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <button type="button" class="btn btn-outline-light" onclick="showContent('twitch4')">Canal Twitch 4</button>
+                <button type="button" class="btn btn-outline-light" onclick="showChat('twitch4')">Chat</button>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <button type="button" class="btn btn-outline-light" onclick="showContent('twitch5')">Canal Twitch 5</button>
+                <button type="button" class="btn btn-outline-light" onclick="showChat('twitch5')">Chat</button>
+            </div>
         </div>
     </div>
 

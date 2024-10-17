@@ -2,8 +2,26 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+#display, #chat {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-light {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }

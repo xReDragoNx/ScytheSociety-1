@@ -1,19 +1,20 @@
 body {
-    background-color: #181818; /* Color de fondo oscuro */
-    color: white; /* Color del texto */
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
 }
 
 .main-title {
     font-weight: bold;
-    font-size: 2.5rem; /* Ajusta el tamaño */
+    font-size: 2.5rem; /* Tamaño del título principal */
 }
 
 .sub-title {
-    font-size: 1.5rem; /* Ajusta el tamaño */
+    font-size: 1.5rem; /* Tamaño del subtítulo */
 }
 
 .description {
-    font-size: 1rem; /* Ajusta el tamaño */
+    font-size: 1rem; /* Tamaño de la descripción */
     margin-bottom: 20px;
 }
 
@@ -22,6 +23,11 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Alinear a la izquierda */
     padding: 20px;
+}
+
+.btn-dark {
+    background-color: #444; /* Color oscuro para botones */
+    border: none; /* Sin borde */
 }
 
 .stream-container {
@@ -39,8 +45,9 @@ body {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #282828; /* Color de fondo del pie de página */
+    background-color: #222; /* Color de fondo del pie de página */
     position: relative;
     bottom: 0;
     width: 100%;
+    color: #ffffff; /* Color del texto del pie de página */
 }

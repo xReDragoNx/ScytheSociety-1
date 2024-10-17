@@ -1,27 +1,46 @@
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
 }
 
-h1, h2 {
-    margin: 0;
+.main-title {
+    font-weight: bold;
+    font-size: 2.5rem; /* Ajusta el tamaño */
 }
 
-footer {
+.sub-title {
+    font-size: 1.5rem; /* Ajusta el tamaño */
+}
+
+.description {
+    font-size: 1rem; /* Ajusta el tamaño */
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear a la izquierda */
+    padding: 20px;
+}
+
+.stream-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #282828; /* Color de fondo del pie de página */
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-#display, #chat {
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.btn-outline-light {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-outline-light:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
 }

@@ -28,6 +28,8 @@ body {
 .btn-dark {
     background-color: #444; /* Color oscuro para botones */
     border: none; /* Sin borde */
+    margin-bottom: 10px; /* Espacio entre botones */
+    width: 80%; /* Reducir ancho de los botones */
 }
 
 .stream-container {

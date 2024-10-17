@@ -4,19 +4,20 @@ function showContent(channel) {
 
     switch (channel) {
         case 'twitch1':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=rubius&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=scythesocietygg&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
             break;
         case 'twitch2':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=canal2&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            // Asegúrate de que este canal de YouTube esté en vivo
+            displayDiv.innerHTML = '<iframe src="https://www.youtube.com/embed/live_stream?channel=UCc9x200As2pVAv6jos1wY7A&autoplay=1" frameborder="0" allowfullscreen="true" height="100%" width="100%"></iframe>';
             break;
         case 'twitch3':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=canal3&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=yumehimesan&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
             break;
         case 'twitch4':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=canal4&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=auronplay&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
             break;
         case 'twitch5':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=canal5&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=ibai&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>';
             break;
         default:
             displayDiv.innerHTML = '<p>Selecciona un canal para ver su contenido.</p>';

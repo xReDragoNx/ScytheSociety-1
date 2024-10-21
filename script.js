@@ -17,7 +17,7 @@ function showContent(channel) {
             chatDiv.innerHTML = '<iframe src="https://www.youtube.com/embed/live_chat?channel=UCc9x200As2pVAv6jos1wY7A&autoplay=1" frameborder="0" allowfullscreen="true" height="400" width="100%"></iframe>';
             break;
         case 'twitch3':
-            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=yumehimesan&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="100%"></iframe>';
+            displayDiv.innerHTML = '<iframe src="https://player.twitch.tv/?channel=rubius&parent=xredragonx.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="100%"></iframe>';
             chatDiv.innerHTML = '<iframe src="https://www.twitch.tv/yumehimesan/chat" frameborder="0" allowfullscreen="true" height="400" width="100%"></iframe>';
             break;
         case 'twitch4':
@@ -60,5 +60,11 @@ document.addEventListener('click', function (e) {
             menu.classList.remove('show');
         });
     }
+});
+
+$('.dropdown-submenu .dropdown-toggle').on("click", function(e) {
+    $(this).next('.dropdown-menu').toggle();
+    e.stopPropagation();
+    e.preventDefault();
 });
 

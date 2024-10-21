@@ -27,6 +27,7 @@ html, body {
     display: flex;
     flex-direction: column; /* Asegúrate de que los hijos se apilen verticalmente */    
     min-height: calc(100vh - 50px); /* Resta la altura del footer del 100% de la vista */
+    margin-bottom: 30px; /* Espacio adicional antes del footer */
 }
 
 .main-title {
@@ -58,6 +59,11 @@ html, body {
     border: none; /* Sin borde */
     margin-bottom: 10px; /* Espacio entre botones */
     width: 80%; /* Reducir ancho de los botones */
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #555; /* Cambia el color en hover */
 }
 
 .stream-container {
@@ -143,4 +149,10 @@ html, body {
 /* Muestra el submenú cuando se pasa el mouse sobre el elemento del submenú */
 .dropdown-submenu:hover .dropdown-menu {
     display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .btn-dark {
+        width: 100%; /* Abarcar el ancho completo en móviles */
+    }
 }

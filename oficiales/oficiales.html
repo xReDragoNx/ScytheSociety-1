@@ -42,6 +42,15 @@
         });
     </script>
 
+    <script>
+        // Verificar si el usuario ha iniciado sesión
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            // Si no ha iniciado sesión, redirigir a la página de inicio de sesión
+            window.location.href = 'login.html';
+        }
+    </script>
+
+
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

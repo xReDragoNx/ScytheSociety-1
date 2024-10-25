@@ -43,6 +43,8 @@
                         password);
 
                     if (userFound) {
+                        // Guardar el estado de inicio de sesión en localStorage
+                        localStorage.setItem('loggedIn', 'true');
                         window.location.href = 'oficiales.html'; // Redirige a la página protegida
                     } else {
                         document.getElementById('error-message').innerText =

@@ -17,67 +17,8 @@
 
     <div class="container text-center">
 
-        <!-- Menú desplegable -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <!-- mx-auto para centrar -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://xredragonx.github.io/ScytheSociety">Pagina Principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Imagenes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Clips</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ragnarok Online
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item"
-                                href="https://xredragonx.github.io/ScytheSociety/RagnarokOnline/romiembros.html">Miembros</a>
-                            <a class="dropdown-item" href="#">Misiones</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Guías</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Builds</a>
-                                    <a class="dropdown-item" href="#">Economía</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            World of Warcraft
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Subopción 1-1</a>
-                            <a class="dropdown-item" href="#">Subopción 1-2</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Subopción 1-3</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Subopción 1-3-1</a>
-                                    <a class="dropdown-item" href="#">Subopción 1-3-2</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Aquí se carga el menú -->
+        <div id="navbar-placeholder"></div>
 
         <div class="description">
             <h1 class="pagina-titulo">Misiones de Ragnarok Online</h1>
@@ -146,6 +87,21 @@
     <footer class="footer">
         <p>Creado por Scythe Society © 2024</p>
     </footer>
+
+    <!-- Script para cargar el menú -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../Codigos/navbar.html")
+                .then(response => {
+                    if (!response.ok) throw new Error("Error al cargar navbar");
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

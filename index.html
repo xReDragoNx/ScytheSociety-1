@@ -55,7 +55,7 @@
     <!-- Script para cargar el menú -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch("Codigos/navbar.html")
+            fetch("codigos/navbar.html")
                 .then(response => {
                     if (!response.ok) throw new Error("Error al cargar navbar");
                     return response.text();

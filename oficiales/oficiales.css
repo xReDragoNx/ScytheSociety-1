@@ -14,7 +14,7 @@ body {
   position: relative; /* Permite posicionar el contenido encima de la imagen de fondo */
   text-align: center; /* Centra el texto dentro del banner */
   color: white; /* Color del texto del banner */
-  background-image: url("../imagenes/banner00.png"); /* Ruta de tu imagen de fondo */
+  background-image: url("imagenes/banner00.png"); /* Ruta de tu imagen de fondo */
   background-size: cover; /* La imagen cubre todo el contenedor */
   background-position: center; /* Centra la imagen dentro del banner */
   width: 100%; /* Asegura que el banner ocupe el ancho completo */
@@ -138,77 +138,3 @@ body {
     width: 100%; /* Abarcar el ancho completo en móviles */
   }
 }
-
-/* rocss */
-
-.pagina-titulo {
-  text-align: left; /* Alinea el título a la izquierda */
-  margin-bottom: 15px; /* Espacio debajo del título, puedes ajustar este valor */
-}
-
-.pagina-descripcion {
-  text-align: justify; /* Justifica el texto de la descripción */
-  margin-bottom: 20px; /* Espacio adicional debajo del párrafo, puedes ajustar este valor */
-}
-
-.pagina h5 {
-  margin-top: 10px; /* Espacio superior */
-}
-
-.pagina a {
-  text-decoration: none !important; /* Sin subrayado */
-  color: inherit; /* Hereda el color del texto del contenedor */
-}
-
-.pagina a:hover {
-  color: #dd1839; /* Color azul por defecto de Bootstrap */
-}
-
-.image-container {
-  position: relative;
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-  padding-top: 150%; /* Mantiene la proporción 2:3 (150% es 3/2) */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
-}
-
-.image-container img {
-  position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
-  top: 0; /* Alinea la imagen a la parte superior */
-  left: 0; /* Alinea la imagen a la izquierda */
-  width: 100%; /* Asegura que la imagen cubra todo el ancho */
-  height: 100%; /* Asegura que la imagen cubra toda la altura */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
-}
-
-.image-container-izludeparanovatos {
-  position: relative;
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-  padding-top: 100%; /* Mantiene la proporción 1:1 (150% es 3/2) */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
-}
-
-.image-container-izludeparanovatos img {
-  position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
-  top: 0; /* Alinea la imagen a la parte superior */
-  left: 0; /* Alinea la imagen a la izquierda */
-  width: 100%; /* Asegura que la imagen cubra todo el ancho */
-  height: 100%; /* Asegura que la imagen cubra toda la altura */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
-}
-
-/*navi copiable*/
-.copiable {
-  display: inline-block; /* Hace que el elemento sea un cuadro en línea */
-  background-color: #f0f0f0; /* Color de fondo */
-  border: 1px solid #ccc; /* Borde del cuadro */
-  border-radius: 5px; /* Bordes redondeados */
-  padding: 5px 10px; /* Espaciado interno */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el cuadro */
-  transition: background-color 0.3s; /* Transición suave */
-}
-
-.copiable:hover {
-  background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
-}
-
-/*fin de navi copiable*/
